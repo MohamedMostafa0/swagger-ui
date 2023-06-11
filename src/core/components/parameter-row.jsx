@@ -30,7 +30,7 @@ export default class ParameterRow extends Component {
     this.setDefaultValue()
   }
 
-  UNSAFE_componentWillReceiveProps(props) {
+  componentWillReceiveProps(props) {
     let { specSelectors, pathMethod, rawParam } = props
     let isOAS3 = specSelectors.isOAS3()
 

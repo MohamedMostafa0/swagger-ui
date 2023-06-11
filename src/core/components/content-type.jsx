@@ -30,7 +30,7 @@ export default class ContentType extends React.Component {
     }
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     if(!nextProps.contentTypes || !nextProps.contentTypes.size) {
       return
     }

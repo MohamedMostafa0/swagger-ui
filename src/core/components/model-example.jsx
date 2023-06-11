@@ -45,7 +45,7 @@ export default class ModelExample extends React.Component {
     })
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     if (
       nextProps.isExecute &&
       !this.props.isExecute &&

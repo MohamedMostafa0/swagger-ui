@@ -67,7 +67,7 @@ export const withMappedContainer = (getSystem, getStore, memGetComponent) => (co
       handleProps(getSystem, mapping, props, {})
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps) {
+    componentWillReceiveProps(nextProps) {
       handleProps(getSystem, mapping, nextProps, this.props)
     }
 

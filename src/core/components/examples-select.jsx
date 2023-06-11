@@ -78,7 +78,7 @@ export default class ExamplesSelect extends React.PureComponent {
     }
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     const { currentExampleKey, examples } = nextProps
     if (examples !== this.props.examples && !examples.has(currentExampleKey)) {
       // examples have changed from under us, and the currentExampleKey is no longer

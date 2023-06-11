@@ -43,7 +43,7 @@ export default class ParamBody extends PureComponent {
     this.updateValues.call(this, this.props)
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     this.updateValues.call(this, nextProps)
   }
 
